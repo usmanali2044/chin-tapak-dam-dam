@@ -1,6 +1,4 @@
-
 let questions = document.querySelector(".questions");
-
 let score = JSON.parse(localStorage.getItem("score"));
 
 if(!score){
@@ -8,18 +6,12 @@ if(!score){
 }
 
 let scorediv = document.querySelector(".score");
-
-
-
 const input = document.querySelector(".input");
-
 const form = document.querySelector("#form");
-
-
 let subhaanwow = document.querySelector(".dam-dam");
-
 let userAns;
 let correctAns;
+
 generatequestions();
 
 form.addEventListener("submit",function(event){
@@ -30,7 +22,6 @@ form.addEventListener("submit",function(event){
 
         score+=10;
         checkans();
-        
     }
 
     else{
@@ -58,19 +49,11 @@ function checkans(){
     
 }
 
-
-
-
 function updateLocalStorage(){
     localStorage.setItem("score",JSON.stringify(score));
 }
 
 updateLocalStorage();
-
-
-
-
-
 
 function generatequestions(){
     const num1 = Math.ceil(Math.random()*10);
