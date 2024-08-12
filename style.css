@@ -46,6 +46,7 @@ html,body{
 .input{
     width: 100%;
     padding: 1vw;
+    font-size: 1.2vw;
 }
 
 input::placeholder{
