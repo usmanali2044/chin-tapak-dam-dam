@@ -1,8 +1,5 @@
 
-
 let questions = document.querySelector(".questions");
-
-
 
 let score = JSON.parse(localStorage.getItem("score"));
 
@@ -49,12 +46,12 @@ form.addEventListener("submit",function(event){
 
 function checkans(){
     if(userAns===correctAns){
-        subhaanwow.innerText = `Yeh le tahlka omelet`;
+        subhaanwow.innerText = `Yeh Le Tahlka omelet`;
         let audio  =  new Audio("audio1.mp3");
         audio.play();
     }
     else{
-        subhaanwow.innerText= `Ye kya bawaseer hai`;
+        subhaanwow.innerText= `Chin Tapak Dam Dam`;
         let audio2 = new Audio("audio2.mp3");
         audio2.play();
     }
